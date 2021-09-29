@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetWebDAVStatus", "GetWebDAVStatus\GetWebDAVStatus.csproj", "{89901571-47FB-4237-9ED7-DE025913641C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89901571-47FB-4237-9ED7-DE025913641C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89901571-47FB-4237-9ED7-DE025913641C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89901571-47FB-4237-9ED7-DE025913641C}.Debug|x64.ActiveCfg = Debug|x64
+		{89901571-47FB-4237-9ED7-DE025913641C}.Debug|x64.Build.0 = Debug|x64
+		{89901571-47FB-4237-9ED7-DE025913641C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89901571-47FB-4237-9ED7-DE025913641C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89901571-47FB-4237-9ED7-DE025913641C}.Release|x64.ActiveCfg = Release|x64
+		{89901571-47FB-4237-9ED7-DE025913641C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D08EC449-D284-4D38-A84F-8BB39A9BCAA7}
+	EndGlobalSection
+EndGlobal
