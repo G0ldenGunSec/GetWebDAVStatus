@@ -13,7 +13,13 @@ The C# project should be a pretty standard build, x64 + Release is the recommend
 
 `make`
 
+Prerequisites for compiling the BOF:
+- i686-w64-mingw32-gcc
+- x86_64-w64-mingw32-gcc
+
 ## Credits
 [@tifkin_](https://twitter.com/tifkin_) originally posted about this method of remotely identifying WebDAV [here](https://twitter.com/tifkin_/status/1419806476353298442).
+
+Special thanks to [@nickvourd](https://twitter.com/nickvourd) for his contributions.
 
 Originally heard about the above tweet on [@flangvik](https://twitter.com/Flangvik)'s [twitch stream](https://www.twitch.tv/flangvik). Would definitely recommend checking out.
