@@ -1,0 +1,29 @@
+#GetWebDAVStatus
+#CNA author @nickvourd
+
+beacon_command_register("GetWebDAVStatus", "Determine if the WebClient Service (WebDAV) is running on a remote system.", "Synopsis: GetWebDAVStatus <target server ip or hostname>\n\n");
+
+alias GetWebDAVStatus {
+    $bid = $1;
+
+    $input = substr($0, 16);
+    @args = split(' ', $input);
+
+    $target = @args[0];
+
+    if ($target eq "") {
+	    berror($bid, "Specify an ip or hostname");
+	    return;
+    }
+
+    # Read in the right BOF file
+    $handle = openf(script_resource("GetWebDAVStatus." . barch($bid) . ".o"));
+    $data   = readb($handle, -1);
+    closef($handle);
+
+    # Pack our arguments
+    $arg_data  = bof_pack($bid, "Z", $target);
+    btask($bid, "GetWebDAVStatus BOF by @G0ldenGunSec && @nickvourd");
+
+    beacon_inline_execute($bid, $data, "go", $arg_data);
+}
